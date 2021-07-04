@@ -1,18 +1,18 @@
 
 # Eshop
-Electronic online Shoping 
+فروشگاه لوازم دیجیتال
 
-# LOGIN DETAILS
+# جزییات لاگین
 
-*  ADMIN  LOGIN: 
+*  برای پنل ادمین: 
 
-> **NOTE :(for admin panel, login from the user's login)
-> Enter the following details in Login for Admin Panel.**
+> **نکته :
+> برای ورود به پنل ادمین کافی است در لاگین کاربر اطلاعات زیر را وارد کنید**
 
 ***Username: admin@admin.com
 Password: password***
 
-* USER LOGIN:
+* یوزر پیش فرض:
 
 ***Username: harry@den.com
 Password: code0***
