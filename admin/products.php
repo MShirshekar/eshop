@@ -19,12 +19,12 @@ if(isset($_GET['category'])){
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Product List
+                لیست محصولات
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li>Products</li>
-                <li class="active">Product List</li>
+                <li><a href="#"><i class="fa fa-dashboard"></i> صفحه اصلی</a></li>
+                <li>محصولات</li>
+                <li class="active">لیست محصولات</li>
             </ol>
         </section>
 
@@ -35,7 +35,7 @@ if(isset($_GET['category'])){
                 echo "
             <div class='alert alert-danger alert-dismissible'>
               <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-              <h4><i class='icon fa fa-warning'></i> Error!</h4>
+              <h4><i class='icon fa fa-warning'></i> خطا!</h4>
               ".$_SESSION['error']."
             </div>
           ";
@@ -45,7 +45,7 @@ if(isset($_GET['category'])){
                 echo "
             <div class='alert alert-success alert-dismissible'>
               <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-              <h4><i class='icon fa fa-check'></i> Success!</h4>
+              <h4><i class='icon fa fa-check'></i> موفقیت!</h4>
               ".$_SESSION['success']."
             </div>
           ";
@@ -56,13 +56,13 @@ if(isset($_GET['category'])){
                 <div class="col-xs-12">
                     <div class="box">
                         <div class="box-header with-border">
-                            <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm btn-flat" id="addproduct"><i class="fa fa-plus"></i> New</a>
+                            <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm btn-flat" id="addproduct"><i class="fa fa-plus"></i> جدید</a>
                             <div class="pull-right">
                                 <form class="form-inline">
                                     <div class="form-group">
                                         <label>Category: </label>
                                         <select class="form-control input-sm" id="select_category">
-                                            <option value="0">ALL</option>
+                                            <option value="0">همه</option>
                                             <?php
                                             $conn = $pdo->open();
 
@@ -86,12 +86,12 @@ if(isset($_GET['category'])){
                         <div class="box-body">
                             <table id="example1" class="table table-bordered">
                                 <thead>
-                                <th>Name</th>
-                                <th>Photo</th>
-                                <th>Description</th>
-                                <th>Price</th>
-                                <th>Views Today</th>
-                                <th>Tools</th>
+                                <th>نام</th>
+                                <th>تصویر</th>
+                                <th>شرح</th>
+                                <th>قیمت</th>
+                                <th>بازدید امروز</th>
+                                <th>ابزارها</th>
                                 </thead>
                                 <tbody>
                                 <?php
@@ -111,12 +111,12 @@ if(isset($_GET['category'])){
                               <img src='".$image."' height='30px' width='30px'>
                               <span class='pull-right'><a href='#edit_photo' class='photo' data-toggle='modal' data-id='".$row['id']."'><i class='fa fa-edit'></i></a></span>
                             </td>
-                            <td><a href='#description' data-toggle='modal' class='btn btn-info btn-sm btn-flat desc' data-id='".$row['id']."'><i class='fa fa-search'></i> View</a></td>
+                            <td><a href='#description' data-toggle='modal' class='btn btn-info btn-sm btn-flat desc' data-id='".$row['id']."'><i class='fa fa-search'></i> دیدن</a></td>
                             <td>&#36; ".number_format($row['price'], 2)."</td>
                             <td>".$counter."</td>
                             <td>
-                              <button class='btn btn-success btn-sm edit btn-flat' data-id='".$row['id']."'><i class='fa fa-edit'></i> Edit</button>
-                              <button class='btn btn-danger btn-sm delete btn-flat' data-id='".$row['id']."'><i class='fa fa-trash'></i> Delete</button>
+                              <button class='btn btn-success btn-sm edit btn-flat' data-id='".$row['id']."'><i class='fa fa-edit'></i> ویرایش</button>
+                              <button class='btn btn-danger btn-sm delete btn-flat' data-id='".$row['id']."'><i class='fa fa-trash'></i> حذف</button>
                             </td>
                           </tr>
                         ";
