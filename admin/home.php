@@ -23,11 +23,11 @@ $conn = $pdo->open();
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Dashboard
+                داشبورد
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Dashboard</li>
+                <li><a href="#"><i class="fa fa-dashboard"></i> صفحه اصلی</a></li>
+                <li class="active">داشبورد</li>
             </ol>
         </section>
 
@@ -38,7 +38,7 @@ $conn = $pdo->open();
                 echo "
             <div class='alert alert-danger alert-dismissible'>
               <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-              <h4><i class='icon fa fa-warning'></i> Error!</h4>
+              <h4><i class='icon fa fa-warning'></i> خطا!</h4>
               ".$_SESSION['error']."
             </div>
           ";
@@ -48,7 +48,7 @@ $conn = $pdo->open();
                 echo "
             <div class='alert alert-success alert-dismissible'>
               <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-              <h4><i class='icon fa fa-check'></i> Success!</h4>
+              <h4><i class='icon fa fa-check'></i> موفقیت!</h4>
               ".$_SESSION['success']."
             </div>
           ";
@@ -73,12 +73,12 @@ $conn = $pdo->open();
 
                             echo "<h3>&#36; ".number_format_short($total, 2)."</h3>";
                             ?>
-                            <p>Total Sales</p>
+                            <p>فروش کل</p>
                         </div>
                         <div class="icon">
                             <i class="fa fa-shopping-cart"></i>
                         </div>
-                        <a href="book.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="book.php" class="small-box-footer">اطلاعات بیشتر <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <!-- ./col -->
@@ -94,12 +94,12 @@ $conn = $pdo->open();
                             echo "<h3>".$prow['numrows']."</h3>";
                             ?>
 
-                            <p>Number of Products</p>
+                            <p>تعداد محصولات</p>
                         </div>
                         <div class="icon">
                             <i class="fa fa-barcode"></i>
                         </div>
-                        <a href="student.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="student.php" class="small-box-footer">اطلاعات بیشتر <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <!-- ./col -->
@@ -115,12 +115,12 @@ $conn = $pdo->open();
                             echo "<h3>".$urow['numrows']."</h3>";
                             ?>
 
-                            <p>Number of Users</p>
+                            <p>تعداد کاربران</p>
                         </div>
                         <div class="icon">
                             <i class="fa fa-users"></i>
                         </div>
-                        <a href="return.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="return.php" class="small-box-footer">اطلاعات بیشتر <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <!-- ./col -->
@@ -142,12 +142,12 @@ $conn = $pdo->open();
 
                             ?>
 
-                            <p>Sales Today</p>
+                            <p>فروش امروز</p>
                         </div>
                         <div class="icon">
                             <i class="fa fa-money"></i>
                         </div>
-                        <a href="borrow.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="borrow.php" class="small-box-footer">اطلاعات بیشتر <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <!-- ./col -->
@@ -157,11 +157,11 @@ $conn = $pdo->open();
                 <div class="col-xs-12">
                     <div class="box">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Monthly Sales Report</h3>
+                            <h3 class="box-title">گزارش فروش ماهانه</h3>
                             <div class="box-tools pull-right">
                                 <form class="form-inline">
                                     <div class="form-group">
-                                        <label>Select Year: </label>
+                                        <label>انتخاب سال: </label>
                                         <select class="form-control input-sm" id="select_year">
                                             <?php
                                             for($i=2015; $i<=2065; $i++){
