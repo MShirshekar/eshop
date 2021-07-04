@@ -46,7 +46,7 @@
 		                  <span class="fa fa-angle-right"></span>
 		                </a>
 		            </div>
-		            <h2>Monthly Top Sellers</h2>
+		            <h2>پرفروش‌ترین‌های این ماه</h2>
 		       		<?php
 		       			$month = date('m');
 		       			$conn = $pdo->open();
