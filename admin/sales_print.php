@@ -28,7 +28,7 @@
 
 		$contents .= '
 			<tr>
-				<td colspan="3" align="right"><b>Total</b></td>
+				<td colspan="3" align="right"><b>کل</b></td>
 				<td align="right"><b>&#36; '.number_format($total, 2).'</b></td>
 			</tr>
 		';
@@ -62,14 +62,14 @@
 	    $content = '';  
 	    $content .= '
 	      	<h2 align="center">TechSoft IT Solutions</h2>
-	      	<h4 align="center">SALES REPORT</h4>
+	      	<h4 align="center">گزارش فروش</h4>
 	      	<h4 align="center">'.$from_title." - ".$to_title.'</h4>
 	      	<table border="1" cellspacing="0" cellpadding="3">  
 	           <tr>  
-	           		<th width="15%" align="center"><b>Date</b></th>
-	                <th width="30%" align="center"><b>Buyer Name</b></th>
-					<th width="40%" align="center"><b>Transaction#</b></th>
-					<th width="15%" align="center"><b>Amount</b></th>  
+	           		<th width="15%" align="center"><b>تاریخ</b></th>
+	                <th width="30%" align="center"><b>نام خریدار</b></th>
+					<th width="40%" align="center"><b>تراکنش#</b></th>
+					<th width="15%" align="center"><b>مقدار</b></th>  
 	           </tr>  
 	      ';  
 	    $content .= generateRow($from, $to, $conn);  
