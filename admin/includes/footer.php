@@ -3,6 +3,6 @@
       <b>All rights reserved</b>
     </div>
 
-    <strong>online shoppin for webprogramming project</strong>
+    <strong>Online Shopping Website for WebProgramming project</strong>
 
 </footer>
