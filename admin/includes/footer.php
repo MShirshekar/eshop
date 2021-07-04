@@ -3,6 +3,6 @@
       <b>All rights reserved</b>
     </div>
 
-    <strong>Online Shopping Website for WebProgramming project</strong>
+    <strong>Copyright &copy; 2021  <a href="https://github.com/alifarabi/eshop"></a></strong>
 
 </footer>
