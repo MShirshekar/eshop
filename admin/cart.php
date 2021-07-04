@@ -30,9 +30,9 @@ else{
                 <?php echo $user['firstname'].' '.$user['lastname'].'`s Cart' ?>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="#"><i class="fa fa-dashboard"></i> صفحه اصلی</a></li>
                 <li>Users</li>
-                <li class="active">Cart</li>
+                <li class="active">سبد خرید</li>
             </ol>
         </section>
 
@@ -64,15 +64,15 @@ else{
                 <div class="col-xs-12">
                     <div class="box">
                         <div class="box-header with-border">
-                            <a href="#addnew" data-toggle="modal" id="add" data-id="<?php echo $user['id']; ?>" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-plus"></i> New</a>
-                            <a href="users.php" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-arrow-left"></i> Users</a>
+                            <a href="#addnew" data-toggle="modal" id="add" data-id="<?php echo $user['id']; ?>" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-plus"></i> جدید</a>
+                            <a href="users.php" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-arrow-left"></i> کاربران</a>
                         </div>
                         <div class="box-body">
                             <table id="example1" class="table table-bordered">
                                 <thead>
-                                <th>Product Name</th>
-                                <th>Quantity</th>
-                                <th>Tools</th>
+                                <th>نام محصول</th>
+                                <th>تعداد</th>
+                                <th>ابزارها</th>
                                 </thead>
                                 <tbody>
                                 <?php
@@ -87,8 +87,8 @@ else{
                             <td>".$row['name']."</td>
                             <td>".$row['quantity']."</td>
                             <td>
-                              <button class='btn btn-success btn-sm edit btn-flat' data-id='".$row['cartid']."'><i class='fa fa-edit'></i> Edit Quantity</button>
-                              <button class='btn btn-danger btn-sm delete btn-flat' data-id='".$row['cartid']."'><i class='fa fa-trash'></i> Delete</button>
+                              <button class='btn btn-success btn-sm edit btn-flat' data-id='".$row['cartid']."'><i class='fa fa-edit'></i> ویرایش تعداد</button>
+                              <button class='btn btn-danger btn-sm delete btn-flat' data-id='".$row['cartid']."'><i class='fa fa-trash'></i> حذف</button>
                             </td>
                           </tr>
                         ";
