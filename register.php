@@ -96,7 +96,7 @@
 				       
 				        //Content
 				        $mail->isHTML(true);                                  
-				        $mail->Subject = 'ساخت حساب کاربری در فرووشگاه';
+				        $mail->Subject = 'ساخت حساب کاربری در فروشگاه';
 				        $mail->Body    = $message;
 
 				        $mail->send();
