@@ -3,6 +3,6 @@
       <b>All rights reserved</b>
     </div>
 
-    <strong>Copyright &copy; 2021  <a href="https://github.com/alifarabi/eshop">Code-Projects</a></strong>
+    <strong>Copyright &copy; 2021  <a href="https://github.com/alifarabi/eshop"></a></strong>
 
 </footer>
