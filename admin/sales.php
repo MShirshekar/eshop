@@ -14,8 +14,8 @@
         Sales History
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Sales</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> صفحه اصلی</a></li>
+        <li class="active">فروش</li>
       </ol>
     </section>
 
@@ -33,7 +33,7 @@
                     </div>
                     <input type="text" class="form-control pull-right col-sm-8" id="reservation" name="date_range">
                   </div>
-                  <button type="submit" class="btn btn-success btn-sm btn-flat" name="print"><span class="glyphicon glyphicon-print"></span> Print</button>
+                  <button type="submit" class="btn btn-success btn-sm btn-flat" name="print"><span class="glyphicon glyphicon-print"></span> چاپ</button>
                 </form>
               </div>
             </div>
@@ -41,11 +41,11 @@
               <table id="example1" class="table table-bordered">
                 <thead>
                   <th class="hidden"></th>
-                  <th>Date</th>
-                  <th>Buyer Name</th>
-                  <th>Transaction#</th>
-                  <th>Amount</th>
-                  <th>Full Details</th>
+                  <th>تاریخ</th>
+                  <th>نام خریدار</th>
+                  <th>تراکنش#</th>
+                  <th>مقدار</th>
+                  <th>جزئیات کامل</th>
                 </thead>
                 <tbody>
                   <?php
@@ -69,7 +69,7 @@
                             <td>".$row['firstname'].' '.$row['lastname']."</td>
                             <td>".$row['pay_id']."</td>
                             <td>&#36; ".number_format($total, 2)."</td>
-                            <td><button type='button' class='btn btn-info btn-sm btn-flat transact' data-id='".$row['salesid']."'><i class='fa fa-search'></i> View</button></td>
+                            <td><button type='button' class='btn btn-info btn-sm btn-flat transact' data-id='".$row['salesid']."'><i class='fa fa-search'></i> دیدن</button></td>
                           </tr>
                         ";
                       }
