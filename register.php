@@ -63,7 +63,7 @@
 						<p>اکانت شما:</p>
 						<p>Email: ".$email."</p>
 						<p>Password: ".$_POST['password']."</p>
-						<p>لطفا از طریق لینک زیر حساب کاربری خود را فعال کنید:.</p>
+						<p>لطفا از طریق لینک زیر حساب کاربری خود را فعال کنید:</p>
 						<a href='http://localhost/ecommerce/activate.php?code=".$code."&user=".$userid."'>فعال کردن حساب کاربری</a>
 					";
 
