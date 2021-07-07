@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="box box-solid">
 	  	<div class="box-header with-border">
-	    	<h3 class="box-title"><b>Most Viewed Today</b></h3>
+	    	<h3 class="box-title"><b>کالاهای پربازدید امروز</b></h3>
 	  	</div>
 	  	<div class="box-body">
 	  		<ul id="trending">
@@ -25,10 +25,10 @@
 <div class="row">
 	<div class="box box-solid">
 	  	<div class="box-header with-border">
-	    	<h3 class="box-title"><b>Become a Subscriber</b></h3>
+	    	<h3 class="box-title"><b>عضویت در خبرنامه سایت</b></h3>
 	  	</div>
 	  	<div class="box-body">
-	    	<p>Get free updates on the latest products and discounts, straight to your inbox.</p>
+	    	<p>جهت دریافت آخرین اخبار و محصولات جدید و تخفیف های شگفت انگیز</p>
 	    	<form method="POST" action="">
 		    	<div class="input-group">
 	                <input type="text" class="form-control">
@@ -44,7 +44,7 @@
 <div class="row">
 	<div class='box box-solid'>
 	  	<div class='box-header with-border'>
-	    	<h3 class='box-title'><b>Follow us on Social Media</b></h3>
+	    	<h3 class='box-title'><b>پروفایل ما در شبکه های مجازی</b></h3>
 	  	</div>
 	  	<div class='box-body'>
 	    	<a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
