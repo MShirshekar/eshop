@@ -9,7 +9,7 @@
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+      <div class="collapse navbar-collapse pull-right" id="navbar-collapse">
         <ul class="nav navbar-nav">
           <li><a href="index.php">صفحه اصلی</a></li>
           <li><a href="">درباره ما</a></li>
@@ -50,7 +50,7 @@
       </div>
       <!-- /.navbar-collapse -->
       <!-- Navbar Right Menu -->
-      <div class="navbar-custom-menu">
+      <div class="navbar-custom-menu pull-left">
         <ul class="nav navbar-nav">
           <li class="dropdown messages-menu">
             <!-- Menu toggle button -->
