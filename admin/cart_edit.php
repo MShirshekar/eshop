@@ -12,7 +12,7 @@ if(isset($_POST['edit'])){
         $stmt = $conn->prepare("UPDATE cart SET quantity=:quantity WHERE id=:id");
         $stmt->execute(['quantity'=>$quantity, 'id'=>$cartid]);
 
-        $_SESSION['success'] = 'Quantity updated successfully';
+        $_SESSION['success'] = 'تعداد با موفقیت آپدیت شد';
     }
     catch(PDOException $e){
         $_SESSION['error'] = $e->getMessage();
