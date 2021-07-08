@@ -13,14 +13,14 @@ if(isset($_POST['add'])){
     $row = $stmt->fetch();
 
     if($row['numrows'] > 0){
-        $_SESSION['error'] = 'Product exist in cart';
+        $_SESSION['error'] = 'کالای موردنظر در سبد فعلی موجود است';
     }
     else{
         try{
             $stmt = $conn->prepare("INSERT INTO cart (user_id, product_id, quantity) VALUES (:user, :product, :quantity)");
             $stmt->execute(['user'=>$id, 'product'=>$product, 'quantity'=>$quantity]);
 
-            $_SESSION['success'] = 'Product added to cart';
+            $_SESSION['success'] = 'کالا به سبد فروش مشتری اضافه شد';
         }
         catch(PDOException $e){
             $_SESSION['error'] = $e->getMessage();
