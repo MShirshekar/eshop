@@ -11,7 +11,7 @@ if(isset($_POST['delete'])){
         $stmt = $conn->prepare("DELETE FROM cart WHERE id=:id");
         $stmt->execute(['id'=>$cartid]);
 
-        $_SESSION['success'] = 'Product deleted from cart';
+        $_SESSION['success'] = 'محصول از سسبد خرید حذف شد';
     }
     catch(PDOException $e){
         $_SESSION['error'] = $e->getMessage();

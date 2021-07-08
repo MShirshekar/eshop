@@ -12,7 +12,11 @@ if(isset($_POST['edit'])){
         $stmt = $conn->prepare("UPDATE cart SET quantity=:quantity WHERE id=:id");
         $stmt->execute(['quantity'=>$quantity, 'id'=>$cartid]);
 
+<<<<<<< HEAD
         $_SESSION['success'] = 'تعداد محصول موردنظر در سبد تغییر یافت';
+=======
+        $_SESSION['success'] = 'تعداد با موفقیت آپدیت شد';
+>>>>>>> bcc075e5bd04b13c054b5280a275e0a4e6cde312
     }
     catch(PDOException $e){
         $_SESSION['error'] = $e->getMessage();
