@@ -16,7 +16,7 @@
 			try{
 				$stmt = $conn->prepare("INSERT INTO cart (user_id, product_id, quantity) VALUES (:user_id, :product_id, :quantity)");
 				$stmt->execute(['user_id'=>$user['id'], 'product_id'=>$id, 'quantity'=>$quantity]);
-				$output['message'] = 'Item added to cart';
+				$output['message'] = 'کالا به سبد اضافه گردید';
 				
 			}
 			catch(PDOException $e){
@@ -26,7 +26,7 @@
 		}
 		else{
 			$output['error'] = true;
-			$output['message'] = 'Product already in cart';
+			$output['message'] = 'کالای موردنظر در سبد موجود است';
 		}
 	}
 	else{
@@ -42,18 +42,18 @@
 
 		if(in_array($id, $exist)){
 			$output['error'] = true;
-			$output['message'] = 'Product already in cart';
+			$output['message'] = 'کالای موردنظر در سبد موجود است';
 		}
 		else{
 			$data['productid'] = $id;
 			$data['quantity'] = $quantity;
 
 			if(array_push($_SESSION['cart'], $data)){
-				$output['message'] = 'Item added to cart';
+				$output['message'] = 'کالا به سبد اضافه گردید';
 			}
 			else{
 				$output['error'] = true;
-				$output['message'] = 'Cannot add item to cart';
+				$output['message'] = 'عدم امکان اضافه کردن کالا';
 			}
 		}
 
