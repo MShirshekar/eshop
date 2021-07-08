@@ -1,30 +1,30 @@
 <?php
-	include 'includes/session.php';
+include 'includes/session.php';
 
-	if(isset($_POST['upload'])){
-		$id = $_POST['id'];
-		$filename = $_FILES['photo']['name'];
-		if(!empty($filename)){
-			move_uploaded_file($_FILES['photo']['tmp_name'], '../images/'.$filename);	
-		}
-		
-		$conn = $pdo->open();
+if(isset($_POST['upload'])){
+    $id = $_POST['id'];
+    $filename = $_FILES['photo']['name'];
+    if(!empty($filename)){
+        move_uploaded_file($_FILES['photo']['tmp_name'], '../images/'.$filename);
+    }
 
-		try{
-			$stmt = $conn->prepare("UPDATE users SET photo=:photo WHERE id=:id");
-			$stmt->execute(['photo'=>$filename, 'id'=>$id]);
-			$_SESSION['success'] = 'User photo updated successfully';
-		}
-		catch(PDOException $e){
-			$_SESSION['error'] = $e->getMessage();
-		}
+    $conn = $pdo->open();
 
-		$pdo->close();
+    try{
+        $stmt = $conn->prepare("UPDATE users SET photo=:photo WHERE id=:id");
+        $stmt->execute(['photo'=>$filename, 'id'=>$id]);
+        $_SESSION['success'] = 'User photo updated successfully';
+    }
+    catch(PDOException $e){
+        $_SESSION['error'] = $e->getMessage();
+    }
 
-	}
-	else{
-		$_SESSION['error'] = 'Select user to update photo first';
-	}
+    $pdo->close();
 
-	header('location: users.php');
+}
+else{
+    $_SESSION['error'] = 'Select user to update photo first';
+}
+
+header('location: users.php');
 ?>
