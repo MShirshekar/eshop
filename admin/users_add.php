@@ -16,7 +16,7 @@
 		$row = $stmt->fetch();
 
 		if($row['numrows'] > 0){
-			$_SESSION['error'] = 'Email already taken';
+			$_SESSION['error'] = 'این ایمیل قبلا ثبت شده است';
 		}
 		else{
 			$password = password_hash($password, PASSWORD_DEFAULT);
@@ -39,7 +39,7 @@
 		$pdo->close();
 	}
 	else{
-		$_SESSION['error'] = 'Fill up user form first';
+		$_SESSION['error'] = 'ابتدا فرم ایجاد کاربر را پر کنید';
 	}
 
 	header('location: users.php');

@@ -46,7 +46,7 @@
 		                  <span class="fa fa-angle-right"></span>
 		                </a>
 		            </div>
-		            <h2>پرفروش‌ترین‌های این ماه</h2>
+		            <h2>پرفروش‌ ترین‌های این ماه</h2>
 		       		<?php
 		       			$month = date('m');
 		       			$conn = $pdo->open();
@@ -78,7 +78,7 @@
 							if($inc == 2) echo "<div class='col-sm-4'></div></div>";
 						}
 						catch(PDOException $e){
-							echo "There is some problem in connection: " . $e->getMessage();
+							echo "مشکل برقراری ارتباط: " . $e->getMessage();
 						}
 
 						$pdo->close();

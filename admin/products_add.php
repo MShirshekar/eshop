@@ -17,7 +17,7 @@ if(isset($_POST['add'])){
     $row = $stmt->fetch();
 
     if($row['numrows'] > 0){
-        $_SESSION['error'] = 'Product already exist';
+        $_SESSION['error'] = 'این محصول در حال حاضر موجود است';
     }
     else{
         if(!empty($filename)){
@@ -43,7 +43,7 @@ if(isset($_POST['add'])){
     $pdo->close();
 }
 else{
-    $_SESSION['error'] = 'Fill up product form first';
+    $_SESSION['error'] = 'ابتدا فرم ایجاد محصول را پر کنید';
 }
 
 header('location: products.php');

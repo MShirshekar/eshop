@@ -38,7 +38,7 @@ if(isset($_POST['save'])){
             $stmt = $conn->prepare("UPDATE users SET email=:email, password=:password, firstname=:firstname, lastname=:lastname, photo=:photo WHERE id=:id");
             $stmt->execute(['email'=>$email, 'password'=>$password, 'firstname'=>$firstname, 'lastname'=>$lastname, 'photo'=>$filename, 'id'=>$admin['id']]);
 
-            $_SESSION['success'] = 'Account updated successfully';
+            $_SESSION['success'] = 'حساب کاربری آپدیت شد';
         }
         catch(PDOException $e){
             $_SESSION['error'] = $e->getMessage();
@@ -48,11 +48,11 @@ if(isset($_POST['save'])){
 
     }
     else{
-        $_SESSION['error'] = 'Incorrect password';
+        $_SESSION['error'] = 'پسورد نامعتبر';
     }
 }
 else{
-    $_SESSION['error'] = 'Fill up required details first';
+    $_SESSION['error'] = 'اطلاعات خواسته شده را تکمیل کنید';
 }
 
 header('location:'.$return);
