@@ -83,15 +83,15 @@
 
                       <p>
                         '.$user['firstname'].' '.$user['lastname'].'
-                        <small>Member since '.date('M. Y', strtotime($user['created_on'])).'</small>
+                        <small>عضویت از  '.date('M. Y', strtotime($user['created_on'])).'</small>
                       </p>
                     </li>
                     <li class="user-footer">
                       <div class="pull-left">
-                        <a href="profile.php" class="btn btn-default btn-flat">Profile</a>
+                        <a href="profile.php" class="btn btn-default btn-flat">پروفایل</a>
                       </div>
                       <div class="pull-right">
-                        <a href="logout.php" class="btn btn-default btn-flat">Sign out</a>
+                        <a href="logout.php" class="btn btn-default btn-flat">خروج از حساب کاربری</a>
                       </div>
                     </li>
                   </ul>

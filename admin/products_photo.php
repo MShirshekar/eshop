@@ -20,7 +20,7 @@ if(isset($_POST['upload'])){
     try{
         $stmt = $conn->prepare("UPDATE products SET photo=:photo WHERE id=:id");
         $stmt->execute(['photo'=>$new_filename, 'id'=>$id]);
-        $_SESSION['success'] = 'Product photo updated successfully';
+        $_SESSION['success'] = 'تصویر کالا با موفقیت امیز اپدیت شد';
     }
     catch(PDOException $e){
         $_SESSION['error'] = $e->getMessage();
@@ -30,7 +30,7 @@ if(isset($_POST['upload'])){
 
 }
 else{
-    $_SESSION['error'] = 'Select product to update photo first';
+    $_SESSION['error'] = 'ابتدا محصول را انتخاب کنید';
 }
 
 header('location: products.php');

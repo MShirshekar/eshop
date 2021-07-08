@@ -32,7 +32,7 @@ if(isset($_POST['add'])){
         try{
             $stmt = $conn->prepare("INSERT INTO products (category_id, name, description, slug, price, photo) VALUES (:category, :name, :description, :slug, :price, :photo)");
             $stmt->execute(['category'=>$category, 'name'=>$name, 'description'=>$description, 'slug'=>$slug, 'price'=>$price, 'photo'=>$new_filename]);
-            $_SESSION['success'] = 'User added successfully';
+            $_SESSION['success'] = 'کالا با موفقیت افزوده شد';
 
         }
         catch(PDOException $e){
