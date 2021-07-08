@@ -60,7 +60,7 @@ if(isset($_GET['category'])){
                             <div class="pull-right">
                                 <form class="form-inline">
                                     <div class="form-group">
-                                        <label>Category: </label>
+                                        <label>دسته بندی: </label>
                                         <select class="form-control input-sm" id="select_category">
                                             <option value="0">همه</option>
                                             <?php

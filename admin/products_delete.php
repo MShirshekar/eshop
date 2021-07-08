@@ -10,7 +10,7 @@ if(isset($_POST['delete'])){
         $stmt = $conn->prepare("DELETE FROM products WHERE id=:id");
         $stmt->execute(['id'=>$id]);
 
-        $_SESSION['success'] = 'Product deleted successfully';
+        $_SESSION['success'] = 'کالای مورد نظر حذف گردید';
     }
     catch(PDOException $e){
         $_SESSION['error'] = $e->getMessage();
@@ -19,7 +19,7 @@ if(isset($_POST['delete'])){
     $pdo->close();
 }
 else{
-    $_SESSION['error'] = 'Select product to delete first';
+    $_SESSION['error'] = 'ابتدا محصول موردنظر را جهت حذف انتخاب کنید';
 }
 
 header('location: products.php');

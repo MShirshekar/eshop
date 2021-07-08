@@ -12,13 +12,13 @@ if(isset($_POST['add'])){
     $row = $stmt->fetch();
 
     if($row['numrows'] > 0){
-        $_SESSION['error'] = 'Category already exist';
+        $_SESSION['error'] = 'این دسته بندی موجود است';
     }
     else{
         try{
             $stmt = $conn->prepare("INSERT INTO category (name) VALUES (:name)");
             $stmt->execute(['name'=>$name]);
-            $_SESSION['success'] = 'Category added successfully';
+            $_SESSION['success'] = 'دسته بندی موردنظر اضافه گردید';
         }
         catch(PDOException $e){
             $_SESSION['error'] = $e->getMessage();
@@ -28,7 +28,7 @@ if(isset($_POST['add'])){
     $pdo->close();
 }
 else{
-    $_SESSION['error'] = 'Fill up category form first';
+    $_SESSION['error'] = 'فرم ایجاد دسته بندی را پر کنید';
 }
 
 header('location: category.php');

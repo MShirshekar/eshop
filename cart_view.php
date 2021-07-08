@@ -12,17 +12,17 @@
 	      <section class="content">
 	        <div class="row">
 	        	<div class="col-sm-9">
-	        		<h1 class="page-header">YOUR CART</h1>
+	        		<h1 class="page-header">سبد خرید شما</h1>
 	        		<div class="box box-solid">
 	        			<div class="box-body">
 		        		<table class="table table-bordered">
 		        			<thead>
 		        				<th></th>
-		        				<th>Photo</th>
-		        				<th>Name</th>
-		        				<th>Price</th>
-		        				<th width="20%">Quantity</th>
-		        				<th>Subtotal</th>
+		        				<th>تصویر کالا</th>
+		        				<th>نام کالا</th>
+		        				<th>قیمت</th>
+		        				<th width="20%">تعداد</th>
+		        				<th>مجموع</th>
 		        			</thead>
 		        			<tbody id="tbody">
 		        			</tbody>
@@ -37,7 +37,7 @@
 	        			}
 	        			else{
 	        				echo "
-	        					<h4>You need to <a href='login.php'>Login</a> to checkout.</h4>
+	        					<h4> جهت بررسی سبد خرید خود <a href='login.php'>وارد حساب کاربری </a> شوید</h4>
 	        				";
 	        			}
 	        		?>
