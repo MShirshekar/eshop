@@ -1,5 +1,11 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+<<<<<<< HEAD
+# Datasource local storage ignored files
+/../../../../../:\wamp64\www\eshop\.idea/dataSources/
+/dataSources.local.xml
+=======
+>>>>>>> 4759ea357dab513aec805ffbb228d3b69c161425
 # Editor-based HTTP Client requests
 /httpRequests/

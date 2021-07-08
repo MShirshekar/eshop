@@ -10,7 +10,7 @@ if(isset($_POST['delete'])){
         $stmt = $conn->prepare("DELETE FROM category WHERE id=:id");
         $stmt->execute(['id'=>$id]);
 
-        $_SESSION['success'] = 'Category deleted successfully';
+        $_SESSION['success'] = 'دسته بندی با موفقیت حذف شد';
     }
     catch(PDOException $e){
         $_SESSION['error'] = $e->getMessage();
@@ -19,7 +19,7 @@ if(isset($_POST['delete'])){
     $pdo->close();
 }
 else{
-    $_SESSION['error'] = 'Select category to delete first';
+    $_SESSION['error'] = 'ابتدا دسته بندی را انتخاب کنید';
 }
 
 header('location: category.php');
